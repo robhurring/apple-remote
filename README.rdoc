@@ -23,4 +23,12 @@ Once you're up and running with RubyCocoa, compiling the framework is pretty tri
     puts "I'm paused... (Playing? #{playing?})"
   end
   
+  up(:up) do
+    puts "The volume-up key is down."
+  end
+  
+  up(:down) do
+    puts "The volume-up key is released."
+  end
+  
   # See other files for more examples... As for cool stuff to do? I leave that to you.
