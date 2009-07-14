@@ -23,6 +23,14 @@ Once you're up and running with RubyCocoa, compiling the framework is pretty tri
     puts "I'm paused... (Playing? #{playing?})"
   end
   
+  menu do
+    if playing?
+      puts "Do something with the menu while we're in 'play' state"
+    else
+      puts "Do something with the menu while we're not in the 'play' state"
+    end
+  end
+  
   up(:up) do
     puts "The volume-up key is down."
   end
