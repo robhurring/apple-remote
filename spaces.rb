@@ -1,7 +1,10 @@
 require 'lib/apple_remote'
 
+# How to change OSX spaces using the remote and some osascript
+# 
 # Assuming you have 3 total spaces and you can use
 # ^# (control+space_number) to get to that space
+
 spaces = 3
 current_space = 1
 def goto(space)
