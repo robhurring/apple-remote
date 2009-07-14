@@ -1,0 +1,26 @@
+= About
+This library is a simple DSL for your apple remote. It uses the AppleRemote.framework for Objective-C (by Martin Kahr) and RubyCocoa[http://rubycocoa.sourceforge.net/HomePage] to hook it all up. It seems pointless, but was fun to write.
+
+Author:: Rob Hurring (mailto:rob@zerobased.com)
+Copyright:: Copyright (c) 2002 Zerobased, LLC
+
+= Special Thanks
+* http://www.rubycocoa.com/appleremote/1 for the idea 
+* Martin Kahr (http://www.martinkahr.com/source-code/) for the awesome AppleRemote framework
+* RubyCocoa (http://rubycocoa.sourceforge.net/HomePage) for being awesome.
+
+== Installation
+
+Once you're up and running with RubyCocoa, compiling the framework is pretty trivial. Theres instructions in the lib/framework/src/README file
+
+== Examples
+
+  play do
+    puts "I'm playing... (Playing? #{playing?})"
+  end
+
+  pause do
+    puts "I'm paused... (Playing? #{playing?})"
+  end
+  
+  # See other files for more examples... As for cool stuff to do? I leave that to you.
