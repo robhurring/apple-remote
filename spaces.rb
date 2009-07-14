@@ -26,7 +26,3 @@ back do
   current_space = spaces if current_space < 1
   goto current_space
 end
-
-menu do
-  puts "Hit the menu"
-end
