@@ -1,0 +1,23 @@
+How to compile the framework:
+=============================
+
+1) Open XCODE to a new project (Cocoa->Framework) and name it "AppleRemote"
+
+2) Add all the *.h files to the Targets->AppleRemote->Copy Headers folder.
+    - RemoteControl.h
+    - AppleRemote.h
+    - HIDRemoteControlDevice.h
+    
+3) Add all the *.m files to the Targets->AppleRemote->Compile Sources folder.
+    - RemoteControl.m
+    - AppleRemote.m
+    - HIDRemoteControlDevice.m
+
+4) Add IOKit.framework and Carbon.framework to the Targets->AppleRemote->Link Binary With Library folder.
+    - Cocoa.framework (should already be there)
+    - Carbon.framework
+    - IOKit.framework
+    
+5) Set your target to "Release" and build.
+
+6) Copy your AppleRemote.framework from your "build/Release" folder to /Library/Frameworks
